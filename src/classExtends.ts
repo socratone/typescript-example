@@ -1,5 +1,5 @@
 class Animal {
-  name: string;
+  protected name: string; // 외부에서는 접근할 수 없지만 상속 받은 클래스에서는 접근할 수 있다.
 
   constructor(name: string) {
     this.name = name;
@@ -27,7 +27,17 @@ class Cow extends Animal {
   }
 }
 
+// override해서 상속받은 함수를 재정의할 수 있다.
+class BigDog extends Dog {
+  bark() {
+    console.log(`${this.name}가 크게 짖습니다.`);
+  }
+}
+
 const dog = new Dog('Husky');
-// dog.bark();
 const cow = new Cow('King', 7);
+const bigDog = new BigDog('Mulder');
+
+// dog.bark();
 // cow.cry();
+// bigDog.bark();

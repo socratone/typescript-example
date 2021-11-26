@@ -7,3 +7,5 @@
 ## never
 
 ## tsconfig
+
+## class
