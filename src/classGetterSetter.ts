@@ -15,6 +15,6 @@ class Lesson {
 }
 
 const lesson = new Lesson('Math');
-console.log(lesson.recentName);
+// console.log(lesson.recentName);
 lesson.recentName = 'English';
-console.log(lesson.recentName);
+// console.log(lesson.recentName);
