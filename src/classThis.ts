@@ -13,6 +13,6 @@ class Balloon {
 }
 
 const balloon = new Balloon(0);
-// balloon.inflate(1);
-// balloon.inflate(2);
-// balloon.inflate(3);
+balloon.inflate(1);
+balloon.inflate(2);
+balloon.inflate(3);

@@ -11,4 +11,4 @@ class Student {
 }
 
 const student = new Student('John', 30);
-// student.printInformation();
+student.printInformation();

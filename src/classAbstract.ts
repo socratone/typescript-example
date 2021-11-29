@@ -21,4 +21,4 @@ class PlusPrinter extends Printer {
 }
 
 const printer = new PlusPrinter('Canon');
-// printer.print();
+printer.print();

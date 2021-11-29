@@ -38,6 +38,6 @@ const dog = new Dog('Husky');
 const cow = new Cow('King', 7);
 const bigDog = new BigDog('Mulder');
 
-// dog.bark();
-// cow.cry();
-// bigDog.bark();
+dog.bark();
+cow.cry();
+bigDog.bark();

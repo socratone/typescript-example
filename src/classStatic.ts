@@ -15,9 +15,9 @@ class Apple {
   }
 }
 
-// console.log(Apple.count);
+console.log(Apple.count);
 const apple = new Apple();
 apple.add();
-// console.log(Apple.count);
+console.log(Apple.count);
 Apple.addStatic();
-// console.log(Apple.count);
+console.log(Apple.count);
