@@ -50,3 +50,23 @@ function play(player: FootballPlayer | BaseballPlayer) {
     player.hit();
   }
 }
+
+// 객체에 type을 추가하는 패턴
+interface Bird {
+  type: 'bird';
+  fly: () => void;
+}
+
+interface Horse {
+  type: 'horse';
+  run: () => void;
+}
+
+function moveAnimal(animal: Bird | Horse) {
+  if (animal.type === 'bird') {
+    animal.fly();
+  }
+  if (animal.type === 'horse') {
+    animal.run();
+  }
+}
