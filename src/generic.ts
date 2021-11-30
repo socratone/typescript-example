@@ -52,7 +52,8 @@ getObjectKeyValue({ name: 'John' }, 'name');
 
 // 5.
 
-class DataStorage<T> {
+// string이나 number 중 한 타입의 데이터만 저장하도록 설정한다.
+class DataStorage<T extends string | number> {
   data: T[] = [];
 
   addItem(item: T) {
